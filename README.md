@@ -29,7 +29,7 @@ www.test.com/test-ws test-custom-parser:// enable://customParser
 其中：`enable://customParser` 表示启用自定义解析器，不然的话whistle会用自带的webscoket解析器，`test-custom-parser://` 表示把请求转到插件的server里面，这样就可以在插件里面自定义对应webscoket请求的解包组包，并显示到 `Network / Frames` 里面，并接收 `Network / Frames` 的状态变化及构造的数据。
 
 ### 自定义普通长连接抓包调试
-该方法适用于所有用TCP建立连接的请求，可以用来抓包调试protobuf、quic等等各种自定义协议的长连接，如何把TCP(Socket)请求代码到whistle可以参考：[轻松篡改WebSocket数据包](https://cnodejs.org/topic/5b4b7b90e374eeab6929d70c)，如果是Node服务可以直接用[socketx](https://github.com/avwo/socketx)，直接配置代理地址和端口即可。
+该方法适用于所有用TCP建立连接的请求，可以用来抓包调试protobuf、quic等等各种自定义协议的长连接，如何把TCP(Socket)请求代码到whistle可以参考：[轻松篡改WebSocket数据包](https://juejin.cn/post/6844903638561734669)，如果是Node服务可以直接用[socketx](https://github.com/avwo/socketx)，直接配置代理地址和端口即可。
 
 > 有关whistle规则配置同支自定义websocket解析器。
 
